@@ -9,23 +9,10 @@
 # parse method should only return unique addresses
 # 
 
-# class EmailAddressParser
-  
-#   attr_accessor :emails 
-  
-#   def initialize(emails)
-#     @emails 
-#   end 
-  
-#   def parse
-#     emails.delete(',').split.uniq
-#   end
-  
-# end 
-
 class EmailAddressParser
 
   attr_accessor :email
+  
   def  initialize(emails)
     @email = emails
   end
