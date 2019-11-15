@@ -17,4 +17,4 @@ class EmailAddressParser
     @parse = parse
   end
   
-  
+end 
