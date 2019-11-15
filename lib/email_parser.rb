@@ -4,3 +4,17 @@
 # or whitespace (' ').
 
 
+# initialize with a list of email addresses
+# emails are separated with spaces or commas
+# parse method should only return unique addresses
+# 
+
+class EmailAddressParser
+  
+  attr_accessor :email 
+  
+  def parse 
+    @parse = parse
+  end
+  
+  
