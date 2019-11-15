@@ -9,18 +9,33 @@
 # parse method should only return unique addresses
 # 
 
-class EmailAddressParser
+# class EmailAddressParser
 
-  attr_accessor :email
+#   attr_accessor :email
   
+#   def initialize(emails)
+#     @email = emails
+#   end
+
+#   def parse
+#     email_array = @email.split(/[, ]/).uniq
+#     email_array.reject! {|element| element.empty?}
+#     email_array
+#   end
+
+# end
+
+class EmailParser
+  attr_accessor :emails 
+
   def initialize(emails)
-    @email = emails
-  end
+    @emails = emails
+  end 
 
   def parse
-    email_array = @email.split(/[, ]/).uniq
-    email_array.reject! {|element| element.empty?}
-    email_array
+    puts splitEmail = emails.split.collect {|address| address.split(',')} 
+    returnArr = splitEmail.flatten.uniq
+    returnArr
   end
 
 end
