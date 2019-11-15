@@ -18,9 +18,12 @@ class EmailAddressParser
   end 
   
   def parse 
-    @parse = parse
-    
-    
-  end
+    csv_emails.split.collect do |address|
+      address.split(',') 
+    end
+    .flatten.uniq 
+  end 
+  
+end 
   
 end 
